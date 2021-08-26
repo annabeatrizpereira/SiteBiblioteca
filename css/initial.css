@@ -1,0 +1,393 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #efefef;
+}
+
+/* titles */
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+
+    color: #43403e;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+
+    color: #43403e;
+}
+
+p, a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.025em;
+
+    color: #777;
+}
+
+a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #43403e;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* structure */
+header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 80px;
+}
+
+.main-login{
+    background-color: #fff;
+    width: min(85vw, 700px);
+    height: 75vh;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.container-login{
+    height: 100%;
+    margin: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.center{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1.8em; */
+}
+
+input{
+    border: 1.7px solid #efefef;
+    box-shadow: 0px 0px 5px rgba(201, 201, 201, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+input:focus{
+    padding-left: 10px;
+    outline: 0;
+}
+
+.boxes #password{
+    margin-top: 40px;
+}
+
+#warning{
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    margin-top: .7rem;
+
+    display: visible;
+}
+
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.end-one, .end-two{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+footer{
+    height: 10vh;
+    color: rgb(156, 155, 155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+/* button */
+button{
+    margin-right: 10px;
+    padding: .8rem 4rem;
+    background: #000;
+    color: #fff;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0.25em;
+
+    border: none;
+    cursor: pointer;
+}
+
+button:focus{
+    outline-style: none;
+}
+
+button:hover{
+    background-color: #c9c9c9;
+}
+
+/*sign up */
+.main-signup{
+    background-color: #fff;
+    width: min(85vw, 700px);
+    height: 95vh;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.container-signup{
+    height: 100%;
+    margin: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#register-signup{
+    border: 2px solid rgb(82, 187, 82);
+    border-radius: 5px;
+    padding: .7rem 0;
+    text-align: center;
+
+    display: visible;
+}
+
+#register-signup p, 
+#register-signup a{
+    color: rgb(82, 187, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#user-signup{
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: .7rem 0;
+    text-align: center;
+
+    display: visible;
+}
+
+#user-signup p{
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#password-signup{
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: .7rem 0;
+    text-align: center;
+}
+
+#password-signup p{
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.boxes-signup input{
+    margin-bottom: 30px;
+}
+
+/* new password */
+.second{
+    margin-top: 30px;
+}
+
+
+/* emprestimo e devolucao */
+.main-em{
+    background-color: #fff;
+    width: min(85vw, 700px);
+    height: 82vh;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.main-dev{
+    background-color: #fff;
+    width: min(85vw, 700px);
+    height: 75vh;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+/* messages */
+.green, .blue, .red, .purple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green p{
+    z-index: 5;
+    position: fixed;
+    bottom: 50px;
+
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(82, 187, 82);
+    color: white;
+}
+
+.blue p{
+    z-index: 5;
+    position: fixed;
+    bottom: 50px;
+
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(83, 83, 250);
+    color: white;
+}
+
+.red p{
+    z-index: 5;
+    position: fixed;
+    bottom: 50px;
+
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(240, 41, 41);
+    color: white;
+}
+
+.red a, .green a{
+    color: white;
+}
+
+.purple p{
+    z-index: 5;
+    position: fixed;
+    bottom: 50px;
+
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(167, 41, 240);
+    color: white;
+}
+
+
+
+/* forgot password */
+.email-sent{
+    border: 2px solid rgb(82, 187, 82);
+    border-radius: 5px;
+    padding: .7rem 0;
+    text-align: center;
+}
+
+.email-sent p{
+    color: rgb(82, 187, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.no-email{
+    border: 2px solid rgb(252, 150, 167);
+    border-radius: 5px;
+    padding: .7rem 0;
+    text-align: center;
+}
+
+.no-email p, .no-email a{
+    color: rgb(252, 150, 167);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+@media(max-width:768px){
+   .main-login{
+        height: 90vh;
+    }
+
+    .container-login{
+        margin: 0 20px;
+    }
+
+    header{
+        padding-left: 50px;
+    }
+
+    .end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .end-one, .end-two{
+        width: 100%;
+    }
+
+    .end-two{
+        margin-top: 20px;
+    }
+
+    button{
+        margin-right: 0;
+    }
+
+    a{
+        margin-left: 0;
+    }
+
+    /* signup */
+    .main-signup{
+        height: 120vh;
+    }
+
+    .container-signup{
+        margin: 0 20px;
+    }
+
+    #btn-signup{
+        padding: 0;
+        height: 3rem;
+        width: 100%;
+    }
+
+    
+
+}
